@@ -20,6 +20,7 @@ const Modal = ({setModal, animarModal, setAnimarModal, guardarGasto}) => {
     const handleSubmit = (e) => {
 
         e.preventDefault()
+
         if([nombre, cantidad, categoria].includes('')){
             setMensaje('Todos los campos son obligatorios')
             setTimeout(() => {
